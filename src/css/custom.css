@@ -82,6 +82,7 @@ html[data-theme="dark"] .navbar__search {
 @media screen and (max-width: 430px) {
   .navbar__search-input {
     width: 2.5rem !important;
+    padding: 0 0 0 2.25rem;
   }
 
   .navbar__search-input:focus {
