@@ -83,7 +83,6 @@ html[data-theme="dark"] .navbar__search {
   .navbar__search-input {
     width: 2.5rem !important;
     padding: 0 0 0 2.25rem;
-    border-radius: 0.5rem;
   }
 
   .navbar__search-input:focus {
