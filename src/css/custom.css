@@ -44,3 +44,7 @@ html[data-theme="dark"] .navbar__search {
 .algolia-autocomplete .ds-cursor .algolia-docsearch-suggestion--wrapper {
   box-shadow: inset -2px 0 0 var(--ifm-color-primary-lightest);
 } */
+
+.navbar-sidebar__back {
+  display: none;
+}
