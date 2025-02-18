@@ -38,6 +38,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     image: "img/insomnia.png",
     navbar: {
       title: "Ethernal",
