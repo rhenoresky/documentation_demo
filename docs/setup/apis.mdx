@@ -1,0 +1,120 @@
+---
+title: 🌐 API Reference
+description: APIs Reference Ethereal.
+sidebar_position: 1
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# API Reference
+
+## Settings Class (`openmeta/config/settings.py`)
+
+Manages the SDK’s configuration settings, allowing for retrieval and updating of configuration values.
+
+### Methods
+
+- **`get(key: str)`**: Retrieves the configuration value based on the provided key.
+- **`set(key: str, value)`**: Sets a configuration value for the specified key.
+
+## AgentCustomization Class (`openmeta/core/agent_customization.py`)
+
+Allows for the customization of agent behavior, including custom settings for various tasks.
+
+### Methods
+
+- **`customize_behavior(agent_id: str, params: dict)`**: Customizes the agent’s behavior based on the given agent ID and parameters.
+- **`get_current_customizations(agent_id: str)`**: Retrieves the current customizations applied to the agent.
+
+## Agent Class (`openmeta/core/agent.py`)
+
+Represents an agent capable of handling various tasks such as data processing, email sending, API integration, and blockchain logging.
+
+### Methods
+
+- **`add_task(task)`**: Adds a new task to the agent's queue.
+- **`process_tasks()`**: Processes all tasks in the agent's queue.
+- **`handle_task(task)`**: Handles a specific task based on its type.
+- **`process_data(task, customizations)`**: Processes data for a given task.
+- **`send_email(task, customizations)`**: Sends an email for a task.
+- **`integrate_api(task, customizations)`**: Integrates with an external API for the task.
+- **`log_to_blockchain(task, customizations)`**: Logs data to the blockchain.
+
+## Memory Class (`openmeta/core/memory.py`)
+
+Stores and retrieves data in memory, allowing agents to store temporary information that can be accessed later.
+
+### Methods
+
+- **`store(data: str)`**: Stores data in memory.
+- **`retrieve(index: int)`**: Retrieves stored data by a specific index.
+
+## TaskQueue Class (`openmeta/core/task_queue.py`)
+
+Manages a queue of tasks, allowing the agent to add tasks and process them sequentially.
+
+### Methods
+
+- **`add_to_queue(task)`**: Adds a task to the queue.
+- **`process_queue()`**: Processes all tasks in the queue.
+
+## Tool Class (`openmeta/core/tools.py`)
+
+Executes external tools, allowing various arguments and parameters to be used for the execution.
+
+### Methods
+
+- **`execute(\*args, **kwargs)`\*\*: Executes an external tool with the provided arguments and parameters.
+
+## Web3Logger Class (`openmeta/core/web3_logger.py`)
+
+Handles logging agent actions to the blockchain using Web3, enabling integration with blockchain networks.
+
+### Methods
+
+- **`log_to_blockchain(agent_id: str, action: str)`**: Logs an agent’s action to the blockchain.
+- **`retrieve_log(agent_id: str)`**: Retrieves the action logs for an agent from the blockchain.
+
+## BlockchainConnector Class (`openmeta/integrations/blockchain.py`)
+
+Connects the SDK to a blockchain network (such as Ethereum or Binance), handling provider URL setup and Web3 connection.
+
+### Methods
+
+- **`get_provider_url(network: str)`**: Returns the provider URL for the selected network.
+- **`connect()`**: Connects to the specified blockchain network.
+
+## ExternalAPI Class (`openmeta/integrations/external_api.py`)
+
+Integrates with and fetches data from an external API, allowing communication with other services.
+
+### Methods
+
+- **`fetch_data(endpoint: str, params: dict)`**: Fetches data from an external API endpoint.
+
+## ErrorHandler Functions (`openmeta/utils/errorhandler.py`)
+
+Handles errors by logging them and performing fallback actions, such as retrying or switching to a backup agent.
+
+### Methods
+
+- **`handle_error(exception: Exception, agent_id: Optional[str])`**: Handles errors by logging them and executing fallback actions.
+- **`fallback_action(agent_id: Optional[str])`**: Executes fallback actions, such as retrying a task.
+- **`retry_task(agent_id: str)`**: Retries a task for a specified agent.
+
+## LoggingUtils Class (`openmeta/utils/logging_utils.py`)
+
+Provides enhanced logging functionalities, allowing for messages to be logged at different severity levels.
+
+### Methods
+
+- **`log(message: str)`**: Logs a message at the specified level.
+
+## Validator Class (`openmeta/utils/validators.py`)
+
+Validates the data received by agents, ensuring that the input is in the correct format.
+
+### Methods
+
+- **`validate_data(data)`**: Validates that the input data is a dictionary.

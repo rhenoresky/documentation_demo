@@ -1,0 +1,46 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2f2e85;
+  --ifm-color-primary-dark: #2a2978;
+  --ifm-color-primary-darker: #282771;
+  --ifm-color-primary-darkest: #21205d;
+  --ifm-color-primary-light: #343392;
+  --ifm-color-primary-lighter: #363599;
+  --ifm-color-primary-lightest: #3d3cad;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #94afff;
+  --ifm-color-primary-dark: #6c91ff;
+  --ifm-color-primary-darker: #5882ff;
+  --ifm-color-primary-darkest: #1b55ff;
+  --ifm-color-primary-light: #bccdff;
+  --ifm-color-primary-lighter: #d0dcff;
+  --ifm-color-primary-lightest: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* .navbar__search {
+  border: 2px solid var(--ifm-color-primary);
+}
+
+html[data-theme="dark"] .navbar__search {
+  border: 2px solid var(--ifm-color-primary-lightest);
+} */
+
+/* .algolia-autocomplete .ds-dropdown-menu:before {
+  border: 2px solid var(--ifm-color-primary-lightest);
+}
+
+.algolia-autocomplete .ds-cursor .algolia-docsearch-suggestion--wrapper {
+  box-shadow: inset -2px 0 0 var(--ifm-color-primary-lightest);
+} */

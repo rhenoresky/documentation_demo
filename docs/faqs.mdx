@@ -1,0 +1,75 @@
+---
+title: 🔍 FAQs
+description: Frequently Asked Questions about Ethereal SDK
+sidebar_position: 3
+---
+
+import React from "react";
+
+# FAQs
+
+## 1. What is Ethereal SDK?
+
+**Ethereal SDK** is a framework designed for building agentic AI systems. It provides tools to create, manage, and customize AI agents that can process tasks, integrate with APIs, and interact with blockchain networks.
+
+## 2. What are the prerequisites to use Ethereal SDK?
+
+Before using Ethereal SDK, ensure you have the following installed:
+
+- **Python 3.8+**
+- **Git** (Optional, for cloning the repository)
+- **pip** or **Poetry** for managing dependencies
+
+## 3. How do I install Ethereal SDK?
+
+You can install **Ethereal SDK** by cloning the repository and setting up a virtual environment. For detailed installation steps, refer to the **Quick Setup**.
+
+## 4. How can I configure the SDK?
+
+You can configure **Ethereal SDK** using the <span style={{ color: 'green' }}>`Settings`</span> class. You can set various configuration values such as <span style={{ color: 'green' }}>`log_level`</span>, <span style={{ color: 'green' }}>`use_blockchain`</span>, and <span style={{ color: 'green' }}>`api_key`</span> using the <span style={{ color: 'green' }}>`get`</span> and <span style={{ color: 'green' }}>`set`</span> methods. For example:
+
+```python
+settings = Settings()
+settings.set("log_level", "DEBUG")
+```
+
+## 5. What types of tasks can an agent handle?
+
+An agent can handle a variety of tasks, such as:
+
+- **Data Processing**: Process data from files or streams.
+- **Email Sending**: Send emails based on task parameters.
+- **API Integration**: Interact with external APIs.
+- **Blockchain Logging**: Log events and data to blockchain networks like Ethereum.
+
+## 6. How can I customize an agent’s behavior?
+
+The <span style={{ color: 'green' }}>`AgentCustomization`</span> class allows you to define custom behaviors for specific agents. You can use the <span style={{ color: 'green' }}>`customize_behavior`</span> method to adjust parameters for an agent's tasks and retrieve current customizations with <span style={{ color: 'green' }}>`get_current_customizations`</span>.
+
+## 7. What blockchain networks are supported?
+
+**Ethereal SDK** currently supports popular blockchain networks like **Ethereum** and **Binance Smart Chain (BSC)**. You can specify the network when setting up the <span style={{ color: 'green' }}>`BlockchainConnector`</span>.
+
+## 8. How do I log actions to the blockchain?
+
+Use the <span style={{ color: 'green' }}>`Web3Logger`</span> class to log actions to the blockchain. The <span style={{ color: 'green' }}>`log_to_blockchain`</span> method sends transactions to the blockchain, while the <span style={{ color: 'green' }}>`retrieve_log`</span> method allows you to fetch logs related to a specific agent.
+
+## 9. How does the TaskQueue work?
+
+The <span style={{ color: 'green' }}>`TaskQueue`</span> class helps manage tasks. You can add tasks to the queue using <span style={{ color: 'green' }}>`add_to_queue`</span>, and process them sequentially with <span style={{ color: 'green' }}>`process_queue`</span>. This is useful for ensuring tasks are handled in the right order.
+
+## 10. How do I handle errors in the SDK?
+
+**Ethereal SDK** provides error handling functions in the <span style={{ color: 'green' }}>`ErrorHandler`</span> module. You can use <span style={{ color: 'green' }}>`handle_error`</span> to log and manage errors, and <span style={{ color: 'green' }}>`fallback_action`</span> to perform actions like retrying the task or switching to a backup agent.
+
+## 11. Can I integrate external APIs with Ethereal SDK?
+
+Yes, you can integrate external APIs using the <span style={{ color: 'green' }}>`ExternalAPI`</span> class. The <span style={{ color: 'green' }}>`fetch_data`</span> method allows you to make HTTP requests to external endpoints, passing any required parameters and headers.
+
+## 12. How do I store and retrieve data in memory?
+
+The <span style={{ color: 'green' }}>`Memory`</span> class allows you to store and retrieve data. You can store data using the <span style={{ color: 'green' }}>`store`</span> method, and retrieve it by index using the <span style={{ color: 'green' }}>`retrieve`</span> method. This is useful for temporarily saving information that agents can access later.
+
+## 13. How do I execute external tools?
+
+The <span style={{ color: 'green' }}>`Tool`</span> class enables the execution of external tools with arguments. You can call the <span style={{ color: 'green' }}>`execute`</span> method with the necessary parameters to interact with these tools.

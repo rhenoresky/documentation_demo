@@ -1,0 +1,62 @@
+---
+title: 🚀 Quick Setup
+description: Follow these steps to install, configure, and run your first agentic AI system.
+sidebar_position: 2
+---
+
+# Quick Setup
+
+Welcome to the Ethereal SDK quick setup guide! Follow these steps to install, configure, and run your first agentic AI system.
+
+## Prerequisites
+
+Before starting, make sure you have the following installed:
+
+- **Python 3.8+** (Check your version with `python --version`)
+- **Git** (Optional, for cloning the repository)
+- **pip or Poetry** (For managing dependencies)
+
+If Python is not installed, you can download it from [Python.org](https://www.python.org/).
+
+## Step 1: Clone the Repository (Optional)
+
+If you want to get the latest version from GitHub, run:
+
+```sh
+git clone https://github.com/your-repo/ethereal-sdk.git
+cd ethereal-sdk
+```
+
+## Step 2: Set Up a Virtual Environment (Recommended)
+
+To avoid dependency conflicts, it's recommended to create a virtual environment:
+
+```sh
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+```
+
+## Step 3: Install Dependencies
+
+You can install the dependencies using either pip or Poetry.
+
+Using pip:
+
+```sh
+pip install -r requirements.txt
+```
+
+Or using Poetry:
+
+```sh
+poetry install
+```
+
+## Step 4: Run Examples
+
+After installation, try running a sample agent to ensure everything is set up properly.
+
+```sh
+python -m examples.integration_example
+```
