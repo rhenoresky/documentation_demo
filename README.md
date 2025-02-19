@@ -4,7 +4,7 @@
 
 To use this project, you can **clone** or **fork** this repository.
 
-### 🔹 Clone Repository
+### ⭐ Clone Repository
 
 ```sh
 # Using HTTPS
@@ -14,13 +14,13 @@ git clone https://github.com/rhenoresky/documentation_demo.git
 git clone git@github.com:rhenoresky/documentation_demo.git
 ```
 
-### 🔹 Fork Repository
+### ⭐ Fork Repository
 
 1. Click the **Fork** button at the top right of the repository page.
 2. Open your terminal and run:
 
 ```sh
-git clone https://github.com/your-username/documentation_demo.git
+git clone https://github.com/your-username/repository.git
 ```
 
 ---
