@@ -1,41 +1,47 @@
-# Website
+# 📌 Web docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## 📥 Clone or Fork Repository
 
-### Installation
+To use this project, you can **clone** or **fork** this repository.
 
-```
-$ yarn
-```
+### 🔹 Clone Repository
 
-### Local Development
+```sh
+# Using HTTPS
+git clone https://github.com/rhenoresky/documentation_demo.git
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+# Using SSH
+git clone git@github.com:rhenoresky/documentation_demo.git
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### 🔹 Fork Repository
 
-### Deployment
+1. Click the **Fork** button at the top right of the repository page.
+2. Open your terminal and run:
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```sh
+git clone https://github.com/your-username/documentation_demo.git
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+---
+
+## 📖 Documentation
+
+Files for documentation content are stored in the [`docs/`](docs/) folder.
+
+### 📂 Folder Structure
+
+```
+repository/
+│── docs/
+│   ├── faqs.mdx
+│   ├── welcome.mdx
+│   ├── why.mdx
+│   ├── setup/
+│   │   ├── apis.mdx
+│   │   ├── quick-start.mdx
+│── src/
+│── README.md
+│── package.json
+│── ...
+```
