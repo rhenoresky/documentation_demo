@@ -1,10 +1,10 @@
-# 📘 Menambahkan dan Mengedit Konten di Folder `docs`
+# 📘 Adding and Editing Content in the `docs` Folder
 
-Dokumentasi ini menjelaskan cara menambahkan dan mengedit konten di dalam folder `docs`
+This documentation explains how to add and edit content in the `docs` folder.
 
-## 📂 Struktur Folder `docs`
+## 📂 `docs` Folder Structure
 
-Secara default, struktur folder `docs` di proyek web-docs terlihat seperti ini:
+By default, the `docs` folder structure in the web-docs project looks like this:
 
 ```
 my-site/
@@ -17,35 +17,35 @@ my-site/
 │   │   ├── quick-start.mdx
 ```
 
-## ✏️ Menambahkan Dokumen Baru
+## ✏️ Adding a New Document
 
-1. **Buat file baru di dalam folder `docs`**
+1. **Create a new file in the `docs` folder**
 
-   Tambahkan file Markdown baru di dalam folder `docs`. Misalnya, buat file `new-document.mdx`:
+   Add a new Markdown file in the `docs` folder. For example, create a file named `new-document.mdx`:
 
    ```sh
    touch docs/new-document.mdx
    ```
 
-2. **Tulis konten dokumen**
+2. **Write the document content**
 
-   Tambahkan konten ke dalam `new-document.mdx` dengan format seperti berikut:
+   Add content to `new-document.mdx` using the following format:
 
    ```mdx
    ---
-   title: Dokumentasi Baru
-   description: Deskripsi Baru
+   title: New Documentation
+   description: New Description
    sidebar_position: 3
    ---
 
-   # Dokumentasi Baru
+   # New Documentation
 
-   Ini adalah contoh dokumen baru dalam web-docs.
+   This is an example of a new document in web-docs.
    ```
 
-3. **Tambahkan ke Sidebar (Opsional)**
+3. **Add to Sidebar (Optional)**
 
-   Jika menggunakan sidebar manual (`sidebars.js`), tambahkan entri untuk dokumen baru:
+   If using a manual sidebar (`sidebars.js`), add an entry for the new document:
 
    ```js
    module.exports = {
@@ -59,48 +59,48 @@ my-site/
    };
    ```
 
-## 📝 Mengedit Konten yang Sudah Ada
+## 📝 Editing Existing Content
 
-1. **Buka file yang ingin diedit**
+1. **Open the file to be edited**
 
-   Temukan file yang ingin diperbarui di dalam folder `docs`. Misalnya, untuk mengedit `faqs.mdx`:
+   Locate the file you want to update in the `docs` folder. For example, to edit `faqs.mdx`:
 
    ```sh
    nano docs/faqs.mdx
    ```
 
-2. **Lakukan perubahan pada konten**
+2. **Make changes to the content**
 
-   Perbarui teks, judul, atau isi sesuai kebutuhan. Contoh:
+   Update the text, title, or content as needed. Example:
 
-   Sebelum:
+   Before:
 
    ```mdx
    # FAQ
 
-   Ini adalah halaman FAQ.
+   This is the FAQ page.
    ```
 
-   Setelah:
+   After:
 
    ```mdx
    # Frequently Asked Questions (FAQ)
 
-   Ini adalah halaman FAQ yang diperbarui dengan lebih banyak informasi.
+   This is the updated FAQ page with more information.
    ```
 
-3. **Simpan perubahan**
+3. **Save the changes**
 
-   Jika menggunakan editor terminal seperti `nano`, tekan `CTRL + X`, lalu `Y` untuk menyimpan.
+   If using a terminal editor like `nano`, press `CTRL + X`, then `Y` to save.
 
-## 🚀 Menjalankan dan Mengecek Perubahan
+## 🚀 Running and Checking Changes
 
-1. Jalankan server pengembangan untuk melihat perubahan:
+1. Run the development server to see the changes:
 
    ```sh
    npm run start
    ```
 
-2. Buka browser dan akses `http://localhost:3000/docs/faqs` atau halaman yang telah diedit untuk melihat hasilnya.
+2. Open your browser and access `http://localhost:3000/docs/faqs` or the edited page to view the results.
 
-Dokumen baru kini tersedia di situs web-docs Anda! 🚀
+Your new document is now available on your web-docs site! 🚀
