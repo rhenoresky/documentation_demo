@@ -34,7 +34,7 @@ my-site/
    ```mdx
    ---
    title: Dokumentasi Baru
-   description: new-document
+   description: Deskripsi Baru
    sidebar_position: 3
    ---
 
